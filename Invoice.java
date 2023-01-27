@@ -33,12 +33,12 @@ public class Invoice {
 		return customer.getDiscount();
 	}
 	public double getAmountAfterDiscount() {
-		return getAmount()-getAmount()*(getCustomerDiscount()/100);
+		return amount-amount*((double)getCustomerDiscount()/100);
 	}
 	public String toString(){
 		return "Invoice[id="+id+",customer="+customer.getName()+
 				"("+customer.getID()+")("+customer.getDiscount()+
-				"%),amount="+getAmount()+"]";
+				"%),amount="+getAmountAfterDiscount()+"]";
 	}
 	
 	

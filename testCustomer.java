@@ -18,7 +18,7 @@ public class testCustomer {
 		System.out.println(inv1.toString());// Invoice's toString()
 		Line();
 		System.out.println("id is: "+inv1.getID());// show invoice's id
-		System.out.println("customer is"+c1.toString());// Customer's toString() by instance inv1
+		System.out.println("customer is: "+c1.toString());// Customer's toString() by instance inv1
 		System.out.println("amount is: "+inv1.getAmount());// show invoice's amount
 		Line();
 		System.out.println("customer's id is: "+inv1.getCustomerID());// show customer's id by instance inv1
